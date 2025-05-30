@@ -1,0 +1,24 @@
+{
+  "name": "ultimate-india-3d-population-viz",
+  "version": "1.0.0",
+  "description": "Interactive 3D visualization of India's population data",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "http-server src -p 8080",
+    "build": "npm run minify",
+    "deploy": "gh-pages -d src",
+    "minify": "terser src/app.js -o src/app.min.js"
+  },
+  "keywords": ["3d", "visualization", "india", "population", "threejs", "webgl"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.160.0",
+    "d3": "^7.8.5"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "gh-pages": "^6.1.0",
+    "terser": "^5.24.0"
+  }
+}
